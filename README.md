@@ -25,6 +25,7 @@ Ce repository contient le fichier Dockerfile de [transmission](https://transmiss
 ## PREREQUIS
 
 Installer [Docker](https://www.docker.com)
+Ouvrir le port 51413 tcp de votre routeur internet
 
 
 ## INSTALLATION
