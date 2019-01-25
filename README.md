@@ -19,7 +19,7 @@
 
 ## INTRODUCTION
 
-Ce repository contient le fichier Dockerfile de [transmission](https://www.mozilla.org/en-US/transmission/new/) en francais pour [Docker](https://www.docker.com), mis à jour automatiquement dans le [Docker Hub](https://hub.docker.com/r/alexandreoda/transmission/) public.
+Ce repository contient le fichier Dockerfile de [transmission](https://transmissionbt.com) en francais pour [Docker](https://www.docker.com), mis à jour automatiquement dans le [Docker Hub](https://hub.docker.com/r/alexandreoda/transmission/) public.
 
 
 ## PREREQUIS
