@@ -25,13 +25,12 @@ Ce repository contient le fichier Dockerfile de [transmission](https://transmiss
 ## PREREQUIS
 
 Installer [Docker](https://www.docker.com)
-Ouvrir le port 51413 tcp de votre routeur internet
 
 
 ## INSTALLATION
 
 ```
-docker run -d --name transmission -v ${HOME}:/home/transmission -v /tmp/.X11-unix/:/tmp/.X11-unix/ -e DISPLAY -p 51413:51413 alexandreoda/transmission
+docker run -d --name transmission -v ${HOME}:/home/transmission -v /tmp/.X11-unix/:/tmp/.X11-unix/ -e DISPLAY alexandreoda/transmission
 ```
 
 
