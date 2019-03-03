@@ -5,14 +5,14 @@
 
 ## INDEX
 
-- [Build Docker](#BUILD)
+- [Badges](#BADGES)
 - [Introduction](#INTRODUCTION)
 - [Prerequis](#PREREQUIS)
 - [Installation](#INSTALLATION)
 - [License](#LICENSE)
 
 
-## BUILD DOCKER
+## Badges
 
 [![transmission docker build](https://img.shields.io/docker/build/alexandreoda/transmission.svg)](https://hub.docker.com/r/alexandreoda/transmission)
 

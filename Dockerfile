@@ -1,6 +1,9 @@
 FROM debian:stretch-slim
 
-MAINTAINER https://oda-alexandre.github.io
+MAINTAINER https://oda-alexandre.com
+
+# VARIABLES
+ENV USER transmission
 
 # INSTALLATION DE L'APPLICATION
 RUN apt-get update && apt-get install -y --no-install-recommends \
@@ -8,15 +11,18 @@ sudo \
 transmission-cli \
 transmission-common \
 transmission-daemon \
-transmission-gtk
+transmission-gtk && \
 
 # AJOUT UTILISATEUR
-RUN useradd -d /home/transmission -m transmission && \
-passwd -d transmission && \
-adduser transmission sudo
+useradd -d /home/${USER} -m ${USER} && \
+passwd -d ${USER} && \
+adduser ${USER} sudo
 
 # SELECTION UTILISATEUR
-USER transmission
+USER ${USER}
+
+# SELECTION ESPACE DE TRAVAIL
+WORKDIR /home/${USER}
 
 # NETTOYAGE
 RUN sudo apt-get --purge autoremove -y && \
