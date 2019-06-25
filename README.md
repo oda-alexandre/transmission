@@ -1,6 +1,6 @@
 # TRANSMISSION
 
-[![dockeri.co](https://dockeri.co/image/alexandreoda/transmission)](https://hub.docker.com/r/alexandreoda/transmission)
+<img src="https://www.blogdumac.com/wp-content/uploads/2015/08/Transmission-Logo.png" />
 
 
 ## INDEX
