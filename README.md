@@ -14,10 +14,7 @@
 
 ## BADGES
 
-[![version](https://images.microbadger.com/badges/version/alexandreoda/transmission.svg)](https://microbadger.com/images/alexandreoda/transmission)
-[![size](https://images.microbadger.com/badges/image/alexandreoda/transmission.svg)](https://microbadger.com/images/alexandreoda/transmission")
-[![build](https://img.shields.io/docker/build/alexandreoda/transmission.svg)](https://hub.docker.com/r/alexandreoda/transmission)
-[![automated](https://img.shields.io/docker/automated/alexandreoda/transmission.svg)](https://hub.docker.com/r/alexandreoda/transmission)
+[![pipeline status](https://gitlab.com/oda-alexandre/transmission/badges/master/pipeline.svg)](https://gitlab.com/oda-alexandre/transmission/commits/master)
 
 
 ## INTRODUCTION
