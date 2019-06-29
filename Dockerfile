@@ -1,11 +1,13 @@
+# IMAGE TO USE
 FROM debian:stretch-slim
 
+# MAINTAINER
 MAINTAINER https://www.oda-alexandre.com/
 
 # VARIABLES
 ENV USER transmission
 
-# INSTALLATION DE L'APPLICATION
+# INSTALL APP
 RUN apt-get update && apt-get install -y --no-install-recommends \
 sudo \
 transmission-cli \
@@ -13,23 +15,23 @@ transmission-common \
 transmission-daemon \
 transmission-gtk && \
 
-# AJOUT UTILISATEUR
+# ADD USER
 useradd -d /home/${USER} -m ${USER} && \
 passwd -d ${USER} && \
 adduser ${USER} sudo
 
-# SELECTION UTILISATEUR
+# SELECT USER
 USER ${USER}
 
-# SELECTION ESPACE DE TRAVAIL
+# SELECT WORKING SPACE
 WORKDIR /home/${USER}
 
-# NETTOYAGE
+# CLEANING
 RUN sudo apt-get --purge autoremove -y && \
 sudo apt-get autoclean -y && \
 sudo rm /etc/apt/sources.list && \
 sudo rm -rf /var/cache/apt/archives/* && \
 sudo rm -rf /var/lib/apt/lists/*
 
-# COMMANDE AU DEMARRAGE DU CONTENEUR
+# START THE CONTAINER
 CMD transmission-gtk
