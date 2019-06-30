@@ -1,6 +1,6 @@
 # TRANSMISSION
 
-<img src="https://www.blogdumac.com/wp-content/uploads/2015/08/Transmission-Logo.png" />
+<img src="https://www.blogdumac.com/wp-content/uploads/2015/08/Transmission-Logo.png" width="200" height="200"/>
 
 
 ## INDEX
