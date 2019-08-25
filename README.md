@@ -28,7 +28,6 @@ Automatically updated on :
 
 - [docker hub public](https://hub.docker.com/r/alexandreoda/transmission/).
 
-
 ## PREREQUISITES
 
 Use [docker](https://www.docker.com)
