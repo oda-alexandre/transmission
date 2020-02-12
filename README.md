@@ -1,6 +1,6 @@
 # TRANSMISSION
 
-<img src="https://www.blogdumac.com/wp-content/uploads/2015/08/Transmission-Logo.png" width="200" height="200"/>
+<img src="https://assets.gitlab-static.net/uploads/-/system/project/avatar/12904483/transmission-logo_01C2012C01634134.png" width="200" height="200"/>
 
 ## INDEX
 
