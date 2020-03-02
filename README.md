@@ -1,6 +1,6 @@
 # TRANSMISSION
 
-<img src="https://assets.gitlab-static.net/uploads/-/system/project/avatar/12904483/transmission-logo_01C2012C01634134.png" width="200" height="200"/>
+![logo](https://assets.gitlab-static.net/uploads/-/system/project/avatar/12904483/transmission-logo_01C2012C01634134.png)
 
 ## INDEX
 
@@ -13,16 +13,13 @@
   - [INSTALL](#install)
   - [LICENSE](#license)
 
-
 ## BADGES
 
 [![pipeline status](https://gitlab.com/oda-alexandre/transmission/badges/master/pipeline.svg)](https://gitlab.com/oda-alexandre/transmission/commits/master)
 
-
 ## FIRST UPDATE
 
 Date: 01-01-01
-
 
 ## INTRODUCTION
 
@@ -38,16 +35,13 @@ Automatically updated on :
 
 - [docker hub public](https://hub.docker.com/r/alexandreoda/transmission/).
 
-
 ## PREREQUISITES
 
 Use [docker](https://www.docker.com)
 
-
 ## INSTALL
 
 ```docker run -d --name transmission -v ${HOME}:/home/transmission -v /tmp/.X11-unix/:/tmp/.X11-unix/ -e DISPLAY alexandreoda/transmission```
-
 
 ## LICENSE
 
