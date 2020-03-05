@@ -1,0 +1,13 @@
+version: "3.7"
+
+services:
+  transmission:
+    container_name: transmission
+    image: alexandreoda/transmission
+    restart: "no"
+    privileged: false
+    environment:
+      - DISPLAY
+    volumes:
+      - "${HOME}:/home/transmission"
+      - "/tmp/.X11-unix:/tmp/.X11-unix"

@@ -10,6 +10,8 @@
   - [INTRODUCTION](#introduction)
   - [PREREQUISITES](#prerequisites)
   - [INSTALL](#install)
+    - [DOCKER RUN](#docker-run)
+    - [DOCKER COMPOSE](#docker-compose)
   - [LICENSE](#license)
 
 ## BADGES
@@ -24,7 +26,7 @@ Docker image of :
 
 Continuous integration on :
 
-- [gitlab](https://gitlab.com/oda-alexandre/transmission/pipelines)
+- [gitlab pipelines](https://gitlab.com/oda-alexandre/transmission/pipelines)
 
 Automatically updated on :
 
@@ -36,7 +38,29 @@ Use [docker](https://www.docker.com)
 
 ## INSTALL
 
-```docker run -d --name transmission -v ${HOME}:/home/transmission -v /tmp/.X11-unix/:/tmp/.X11-unix/ -e DISPLAY alexandreoda/transmission```
+### DOCKER RUN
+
+```\
+docker  run -d --name transmission -v ${HOME}:/home/transmission -v /tmp/.X11-unix/:/tmp/.X11-unix/ -e DISPLAY alexandreoda/transmission
+```
+
+### DOCKER COMPOSE
+
+```yml
+version: "3.7"
+
+services:
+  transmission:
+    container_name: transmission
+    image: alexandreoda/transmission
+    restart: "no"
+    privileged: false
+    environment:
+      - DISPLAY
+    volumes:
+      - "${HOME}:/home/transmission"
+      - "/tmp/.X11-unix:/tmp/.X11-unix"
+```
 
 ## LICENSE
 
