@@ -41,7 +41,12 @@ Use [docker](https://www.docker.com)
 ### DOCKER RUN
 
 ```\
-docker run -d --name transmission -v ${HOME}:/home/transmission -v /tmp/.X11-unix/:/tmp/.X11-unix/ -e DISPLAY alexandreoda/transmission
+docker run -d \
+--name transmission \
+-e DISPLAY \
+-v ${HOME}:/home/transmission \
+-v /tmp/.X11-unix/:/tmp/.X11-unix/ \
+alexandreoda/transmission
 ```
 
 ### DOCKER COMPOSE
